@@ -6,7 +6,7 @@
 - Replace the files found in this folder in their corresponding place inside the `raven` folder.
 ```
 cd raven_modified
-cp finetune_learner.py test.py ../raven/.
+cp finetune_learner.py test.py my_environment.yml ../raven/.
 cp data/* ../raven/data/.
 cp -r conf/* ../raven/conf/.
 cd ../raven
@@ -14,7 +14,7 @@ cd ../raven
 - Change the following files:
     - `conf/config_test.yaml` -> `output_dir` field; where to save the features
     - `conf/data/dataset/lrs3.yaml` -> `test_csv` and `root_path`; where the preprocessed videos and the corresponding CSV file are located.
-- Set the conda env (`conda env create -f environment.yml`)
+- Set the conda env (`conda env create -f my_environment.yml`). You can also try using the original `environment.yml` but it might fail due to some package errors; results should not differ.
 
 Finally, run the following command (which can be also found in `raven/scrips/testing/vsr/lrse3/large_lrs3vox2avs_self_braven.sh`):
 

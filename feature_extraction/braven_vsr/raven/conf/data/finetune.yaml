@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - dataset: lrs3
+  - channel: grayscale
+  - crop_type: mouth
+frames_per_gpu_val: 500
+modality: video
+labels_type: unigram1000

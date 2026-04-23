@@ -1,0 +1,9 @@
+defaults:
+  - _self_
+  - paths: default
+sample_rate: 16000
+fps: 25
+train_csv: ""  # DONT CHANGE THIS
+val_csv: ""  # DONT CHANGE THIS
+test_csv: "-"  # add here csv path
+root_path: "-"  # add here root path

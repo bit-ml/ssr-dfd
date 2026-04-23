@@ -1,0 +1,22 @@
+defaults:
+  - _self_
+  - data: finetune
+  - logger: default
+  - logging: default
+  - model: finetune
+  - trainer: finetune
+  - decode: default
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
+project_name: raven_test
+experiment_name:
+num_workers: 8
+fix_seed: True
+gpus:
+slurm_job_id:
+train: False
+log_wandb: False
+test_on_one_gpu: True
+output_dir: "-"  # add here output directory

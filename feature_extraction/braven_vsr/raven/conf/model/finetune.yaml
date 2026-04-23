@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - visual_backbone: resnet_transformer_base
+  - audio_backbone: resnet_transformer_large
+  - language_model: default
+pretrained_model_path:
+pretrained_lm_path:

@@ -1,9 +1,16 @@
 # BRAVEn VSR feature extraction
 
 - First extract mouth regions and audio using AV-HuBERT preprocessing code (see `avhubert` folder).
-- `git clone https://github.com/ahaliassos/raven?tab=readme-ov-file`.
+- `git clone https://github.com/ahaliassos/raven.git`.
 - Download the BRAVEn VSR high-resource Large w/ ST model (link [here](https://drive.google.com/file/d/1bU-bFxEiXNXNoOLKaAz6_9j7XuE7f_6r/view?usp=sharing)) and place it `raven/ckpts/`.
 - Replace the files found in this folder in their corresponding place inside the `raven` folder.
+```
+cd raven_modified
+cp finetune_learner.py test.py ../raven/.
+cp data/* ../raven/data/.
+cp -r conf/* ../raven/conf/.
+cd ../raven
+```
 - Change the following files:
     - `conf/config_test.yaml` -> `output_dir` field; where to save the features
     - `conf/data/dataset/lrs3.yaml` -> `test_csv` and `root_path`; where the preprocessed videos and the corresponding CSV file are located.

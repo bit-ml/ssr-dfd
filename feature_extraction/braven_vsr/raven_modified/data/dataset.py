@@ -59,6 +59,10 @@ class AVDataset(Dataset):
                     file_path, label, _ = path_count_label.split(",")
                 if label == "label":
                     continue
+                if not os.path.exists(os.path.join(self.path_prefix, file_path[:-4] + ".wav")):
+                    continue
+                if not os.path.exists(os.path.join(self.path_prefix, file_path[:-4] + "_roi.mp4")):
+                    continue
 
                 paths_counts_labels.append(
                     (file_path, [int(lab) for lab in label.split()])

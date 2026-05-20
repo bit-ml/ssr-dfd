@@ -13,7 +13,9 @@
 To extract the best set of features for each modality reported in the paper (Wav2Vec2, BRAVEn Video and AV-HuBERT) see the `feature_extraction` folder.
 
 ## Linear probing
-Code and checkpoints for linear probing can be found in the `linear_probing` folder.
+Code and checkpoints for linear probing can be found in the `linear_probing` folder:
+- `checkpoints` -> contains the checkpoints trained on the AV1M subset.
+- `csv_metadata` -> contains the csv's used for testing/training. You can also use them as an example if you want to train/test on a different dataset.
 
 ### Installation
 ```bash

@@ -1,0 +1,11 @@
+data_info:
+  root_path: ""  # Data root path 
+  csv_root_path: ""  # Path to the folder containing split csv's
+  apply_l2: True  # Apply l2 normalization of input features (always used in our experiments)
+  input_type: ""  # video, audio, multimodal
+
+ckpt_path: ""  # Path to the model ckpt
+
+output_path: ""  # Path to output folder
+
+seed: 43

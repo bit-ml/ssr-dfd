@@ -20,6 +20,7 @@ Code and checkpoints for linear probing can be found in the `linear_probing` fol
 ### Installation
 ```bash
 conda create -n ssr_dfd python=3.10
+conda activate ssr_dfd
 pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 ```

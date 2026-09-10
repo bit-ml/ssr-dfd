@@ -36,7 +36,10 @@ The csv required need to have two columns: `path` containing the relative path f
 The checkpoints, logs (in the form of csv) and hyperparameter used (set in config file) will be saved in the specified output folder.
 
 ### Test
-To test a trained model, you need to fill the `configs/test_config.yaml` config file (the fields have similar meaning to the ones used in `train_config.yaml`).
+To test a trained model, you need to fill the `configs/test_config.yaml` config file (the fields have similar meaning to the ones used in `train_config.yaml`). After that, run the following command:
+```bash
+python train_test.py --test --config configs/test_config.yaml
+```
 
 ## License
 
